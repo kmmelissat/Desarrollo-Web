@@ -1,0 +1,99 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #ffe7f7;
+    color: #a1198f;
+    line-height: 1.2;
+    text-align: center;
+}
+
+ul{
+    list-style:none;
+}
+
+.main-title{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #de5099;
+    font-size: 3em;
+    text-align: center;
+    margin-top: 20px;
+}
+.subtitle{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #e97ab3;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: #de5099;
+    text-decoration-line: overline;
+}
+.intro{
+    font-size: 1.2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #64a1da;
+    text-align: center;
+    text-decoration: wavy
+}
+
+.resumen-section{
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    margin-top: 60px;
+}
+.first-image{
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.characters-section {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.character {
+    display: inline-block;
+    margin: 20px;
+    width: 200px;
+}
+
+.character-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.character h4 {
+    color: #de5099;
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.character p {
+    color: #2c3e50;
+    font-size: 1em;
+    text-align: center;
+}
+
+
+
+a{
+    color: #eba1cf;
+    text-decoration: none;
+    font-weight: 700;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+    text-align: center;
+    background-color: #ffe7f7;
+}
+a:hover{
+    color: #f741a5;
+    text-decoration: underline;
+}
+
+.footer-text{
+    font-size: 1.1em;
+    text-align: center;
+    margin-top: 20px;
+    color: #7f8c8d;
+    font-family: 'Monsterrat', sans-serif;
+}

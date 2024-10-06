@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+#yo {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin: 2rem; 
+}
+
+#meet{
+    font-size: 2.5rem; 
+    margin: 0 auto;
+    text-align: center;
+    color: #f090bd;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+#fotomine {
+    max-width: 500px;
+    width: calc(70% - 20px); 
+    height: auto;
+    margin: 0 10px; 
+    display: block; 
+    margin: 0 auto; 
+  }
+.collage {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.foto-collage {
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover;  
+    box-shadow: 0 4px 8px rgb(225, 151, 195);
+}
+#chofi {
+    width: 100%; 
+    object-fit: cover;  
+    box-shadow: 0 4px 8px rgb(225, 151, 195);
+}
+
+#disney{
+    width: 100%; 
+    object-fit: cover;  
+    box-shadow: 0 4px 8px rgb(225, 151, 195);
+}
+
+.collage2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.foto-collage2 {
+    width: 100%; 
+    height: 300px; 
+    object-fit: cover;  
+    box-shadow: 0 4px 8px rgb(225, 151, 195);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-image: url('img/fondo.jpeg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+}
+
+header {
+    background-color: #f1618f;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 0.2em;
+
+
+}
+
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+nav{
+    text-align: center;
+
+}
+
+nav span a{
+    background-color: white;
+    border: 1px solid;
+    color: black;
+    font-size: 0.8rem;
+    padding: 10px;
+    text-decoration: none;
+
+}
+
+nav span a:hover{
+    background-color: #f090bd;
+    color: white;
+
+}
+
+section {
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+section article{
+    background-color: rgba(243, 180, 208, 0.365);
+    margin-top: 20px;
+    padding: 12px;
+}
+
+section article h2{
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Bebas Neue", sans-serif;
+    color:#f1618f;
+    margin-bottom: 1rem;
+    letter-spacing: 0.05em;
+}
+
+p {
+    margin: 1.7rem;
+    font-size: 1.1rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+footer {
+    background-color:#ecbecf;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+footer a {
+    color: #f1618f;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+section#about p:first-letter {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #e75695;
+}
+
+footer p:nth-of-type(2) {
+    margin-top: 1rem;
+}
+
+#personal-info {
+    margin: 2rem auto;
+    max-width: 600px;
+    text-align: left;
+}
+
+#personal-info table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#personal-info th, #personal-info td {
+    padding: 0.75rem;
+    border: 1px solid #fef5f9;
+}
+
+#personal-info th {
+    background-color: #f1618f;
+    color: white;
+    text-align: left;
+}
+
+#personal-info td {
+    background-color: #fde3f32b;
+}
+
+#personal-info tr:nth-child(even) td {
+    background-color: #fff0f6;
+}
+

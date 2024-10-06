@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+html {
+    margin: 2rem;
+    background-color: rgb(255, 196, 225);
+}
+
+header {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    color: palevioletred;
+    padding-bottom: 10px;
+}
+
+header ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    font-weight: bold;
+    color: pink;
+}
+
+.guia-card {
+    display: block;
+    width: 100%;
+
+    background-color: rgb(255, 243, 251);
+    border-radius: 20px;
+    color: rgb(244, 24, 98);
+    font-size: 1.5rem;
+    padding: 2rem;
+    margin-bottom: 3rem;
+}

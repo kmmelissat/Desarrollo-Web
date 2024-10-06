@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css"> 
+</head>
+
+<body class="formdatos">
+
+    <form action="Ejercicio3.html" method="post">
+        
+        <img src="img/foto-perfil.jpg" alt="Foto perfil"><h1>Perfil</h1>
+
+        <fieldset id="datos">
+            <legend>Datos</legend>
+            <TABLE border="0">
+            <TR>
+                <TD>Fecha de Nacimiento:</TD>
+                <TD><INPUT type="date" name="apellido" /></TD>
+            </TR> 
+            <TR>
+                <TD>Ingrese su foto:</TD>
+                <TD><INPUT type="file" name="foto"/></TD>
+            </TR> 
+            <TR>
+                <TD>Nacionalidad:</TD>
+                <TD>
+                    <INPUT type="text" list="nacionalidad"/>
+                        <DATALIST id="nacionalidad">
+                        <OPTION value="Salvadoreño">Salvadoreño(a)</OPTION> 
+                        <OPTION value="Hondureño">Hondureño(a)</OPTION>
+                        <OPTION value="Guatemalteco">Guatemalteco(a)</OPTION> 
+                        <OPTION value="Costarricense">Costarricense</OPTION>
+                        <OPTION value="Nicaraguense">Nicarag&uuml;ense</OPTION> 
+                        <OPTION value="Panameño">Panameño(a)</OPTION>
+                        </DATALIST>
+                </TD>
+            </TR>
+
+            <TR>
+                <TD>Color favorito:</TD>
+                <TD><INPUT type="color" name="color" ></TD>
+            </TR>
+            <TR> 
+                <TD>Sexo:</TD>
+                <TD>
+                    <INPUT type="radio" name="sexo" value="mas "checked>Masculino</BR>
+                    <INPUT type="radio" name="sexo" value="fem">Femenino
+                </TD>
+            </TR>
+            <TR>
+                <TD>Edad:</TD>
+                <TD><INPUT type="number" name="edad" min="18" max="50" /></TD>
+            </TR> 
+            <TR>
+                <TD>Direcci&oacute;n:</TD>
+                <TD><TEXTAREA rows="5" cols="30"></textarea></TD>
+            </TR>
+            </TABLE>
+        </fieldset>
+
+        <fieldset id="temas">
+            <legend>Temas</legend>
+            Elija tema de interes:<br><br>
+            <input type="radio" name="tema" id="" value="ciencia" checked>Ciencia<br>
+            <input type="radio" name="tema" id="" value="arte">Arte<br>
+            <input type="radio" name="tema" id="" value="literatura">Literatura<br>
+            <input type="radio" name="tema" id="" value="tecnologia">Tecnologia<br>
+            <input type="radio" name="tema" id="" value="musica">Musica<br>
+            <input type="radio" name="tema" id="" value="informatica">Informatica<br>
+            <br>
+            Libros y articulos de su interes:
+            <select id="Selarea" multiple>
+                <option value="Asp">Asp.net</option>
+                <option value="vb">vb.net</option>
+                <option value="C#">c#.net</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="PHP">PHP</option>
+                <option value="Java">Java</option>
+                <option value="Android">Android</option>
+                <option value="Cisco">Curricula Cisco</option>
+                <option value="Redes">Redes comunicacion informatica</option>
+                <option value="SQL">SQL</option>
+                <option value="Oracle">Oracle</option>
+            </select>
+        </fieldset>
+
+        <fieldset id="aficiones">
+            <legend>Aficiones</legend>
+            Elija su pasatiempo:
+            <br><br>
+            <input type="checkbox" name="aficion" value="deporte" checked>Deporte<br>
+            <input type="checkbox" name="aficion" value="musica">Música<br>
+            <input type="checkbox" name="aficion" value="lectura">Lectura<br>
+            <input type="checkbox" name="aficion" value="pesca">Pesca<br>
+            <input type="checkbox" name="aficion" value="pasear">Pasear<br>
+            <input type="checkbox" name="aficion" value="cine">Cine
+        </fieldset>
+
+        <button class="boton" type="submit">Enviar Información</button>
+
+    </form>
+    
+</body>
+</html>

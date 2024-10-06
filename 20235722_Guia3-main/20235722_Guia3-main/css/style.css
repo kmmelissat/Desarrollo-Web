@@ -1,0 +1,111 @@
+@import url(https://fonts.googleapis.com/css?family=Muli);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  text-align: justify;
+}
+
+header {
+    background: #16A085;
+    height: 130px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1; 
+}
+
+
+  
+footer {
+    margin-top: 20px;
+    background: #16A085;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1; 
+}
+  
+header div, footer div {
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+}
+  
+h1 {
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+    padding-top: 0.5rem;
+}
+  
+h2 {
+    font-size: 2rem;
+}
+
+section{
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 130px; 
+    padding-bottom: 50px; 
+}
+
+section article{
+    font-size: 0.9rem;
+    height: 340px;
+    width: 32.33%;
+    overflow: hidden;
+    margin: 0.5%;    
+    border: 2px dashed #16A085;
+    padding: 1%;
+    box-sizing: border-box;
+}
+
+section article h3{
+    text-align: center;
+}
+
+section article img{
+    height: 180px;
+    max-width: 80%;
+    margin: 5px auto;
+    display: block;
+
+}
+
+footer div{
+    padding-top: 1rem;
+}
+
+
+section article:nth-child(2){
+    background-color: rgba( 70,130,180,0.9); 
+    position: static;
+    display: none;
+    left: 100px;
+    top: 50px;
+}
+
+/* 
+  Posicionamiento relativo (position: relative):
+  Mueve un elemento en relación a su posición original sin sacarlo del flujo normal del documento, 
+  por lo que sigue ocupando su espacio original.
+
+  Posicionamiento absoluto (position: absolute):
+  Ubica un elemento en relación a su contenedor posicionado más cercano, 
+  lo saca del flujo del documento y no afecta a otros elementos.
+*/
+
+/* 
+  La diferencia entre display: none y visibility: hidden es que display: none elimina el elemento del flujo del documento y no ocupa espacio, 
+  mientras que visibility: hidden oculta el elemento visualmente pero sigue ocupando su espacio en el diseño.
+*/
