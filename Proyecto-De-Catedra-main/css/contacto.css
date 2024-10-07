@@ -1,0 +1,164 @@
+:root {
+    --primary: #0b1320;
+    --secondary: #1e2c46;
+    --third: #3d5d76;
+    --fourth: #758cac;
+    --background: #f0ebd8;
+
+}
+
+html {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/teatro-1.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 190px);
+    padding: 20px;
+}
+
+.form-box {
+    background-color: #efefee;
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #758cac;
+    width: 50%;
+}
+
+#form-contact {
+    text-align: center;
+    color: #0f224a;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+input[type="tel"],
+select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    height: 150px;
+    resize: vertical;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+div label {
+    margin-right: 15px;
+    color: #333;
+}
+
+button[type="submit"] {
+    background-color: #758cac;
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #1e2c46;
+    color: #ddd;
+}
+
+@media screen and (max-width: 480px) {
+    .form-box {
+        width: 90%;
+        padding: 15px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="date"],
+    input[type="tel"],
+    select,
+    textarea {
+        font-size: 14px;
+    }
+
+    button[type="submit"] {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .form-box {
+        width: 70%;
+        padding: 20px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="date"],
+    input[type="tel"],
+    select,
+    textarea {
+        font-size: 15px;
+    }
+
+    button[type="submit"] {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .form-box {
+        width: 50%;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="date"],
+    input[type="tel"],
+    select,
+    textarea {
+        font-size: 16px;
+    }
+
+    button[type="submit"] {
+        font-size: 16px;
+    }
+}

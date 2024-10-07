@@ -1,0 +1,147 @@
+
+#primera-seccion-contendor {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    text-align: left;
+    height: 60vh;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/teatro-galeria.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#primera-seccion h2{
+    color: white;
+    font-size: 3.5em;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.segunda-seccion {
+    text-align: center;
+    padding: 50px;
+    background-color: #E0E1DD;
+}
+
+.envoltorio-galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px 0 #758cac;
+    text-align: center;
+}
+
+.grid img{
+    width: 100%;
+    height: auto;
+}
+
+.grid h3{
+    text-align: left;
+    font-size: 1.75em;
+}
+
+.grid p{
+    text-align: left;
+}
+
+.botoncito{
+    display: inline-block;
+    margin-right: 200px;
+    padding: 10px 20px; 
+    background-color: #778DA9;
+    color: white; 
+    text-decoration: none; 
+    border-radius: 30px;
+}
+
+.botoncito:hover{
+    padding: 15px 30px;
+    background-color: #0D1B2A;
+}
+
+@media (max-width: 480px) {
+    #primera-seccion-contendor {
+        height: 50vh;
+        background-size: cover;
+        text-align: center;
+        padding: 20px;
+    }
+
+    #primera-seccion h2 {
+        font-size: 2em;
+    }
+
+    .envoltorio-galeria {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .grid h3 {
+        font-size: 1.5em;
+    }
+
+    .botoncito {
+        margin-right: 0;
+        padding: 10px 15px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    #primera-seccion-contendor {
+        height: 55vh;
+        background-size: cover;
+        text-align: center;
+    }
+
+    #primera-seccion h2 {
+        font-size: 3em;
+    }
+
+    .envoltorio-galeria {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .grid h3 {
+        font-size: 1.6em;
+    }
+
+    .botoncito {
+        margin-right: 50px;
+        padding: 10px 15px;
+    }
+}
+
+
+@media (min-width: 769px){
+    #primera-seccion-contendor {
+        height: 60vh;
+    }
+
+    #primera-seccion h2 {
+        font-size: 3.2em;
+    }
+
+    .envoltorio-galeria {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 35px;
+    }
+
+    .botoncito {
+        margin-right: 100px;
+        padding: 10px 20px;
+    }
+}

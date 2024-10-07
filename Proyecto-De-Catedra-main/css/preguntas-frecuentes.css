@@ -1,0 +1,80 @@
+body {
+    background-color: #0D1B2A;
+}
+
+#portada {
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+}
+
+#portada img {
+    width: 100%;
+    height: 80vh;
+    display: block;
+}
+
+#preguntas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(248, 248, 248);
+
+}
+
+#preguntas h1 {
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    padding: 50px;
+}
+
+#contenedor-preguntas {
+    background-color: #E0E1DD;
+    width: 100%;
+    padding: 2% 10%;
+    color: #1B263B;
+    line-height: 1.8rem;
+
+}
+
+#contenedor-preguntas h2 {
+    margin-top: 1.5em;
+    color: #0D1B2A;
+    font-weight: bold;
+}
+
+#contenedor-preguntas p {
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 480px) {
+    .servicios .grid {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    #contenedor-preguntas {
+        padding: 2em 1em;
+    }
+
+    footer {
+        font-size: 0.5em;
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .servicios .grid {
+        width: calc(50% - 1%);
+    }
+
+    #contenedor-preguntas {
+        padding: 4em 5em;
+    }
+
+    footer {
+        font-size: 0.75em;
+        padding: 15px;
+    }
+}

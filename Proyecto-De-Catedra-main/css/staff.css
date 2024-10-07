@@ -1,0 +1,149 @@
+:root{
+    --primary: #0b1320;
+    --secondary: #1e2c46;
+    --third: #3d5d76;
+    --fourth: #758cac;
+    --background: #f0ebd8;
+
+}
+
+.staff-section {
+    text-align: center;
+    padding: 50px;
+}
+
+.staff-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color:#3d5d76;
+}
+
+.staff-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.staff-member {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #758cac;
+    text-align: center;
+}
+
+.staff-member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 5px solid #1e2c46; 
+}
+
+.staff-member h2 {
+    font-size: 20px;
+    color: #3d5d76;
+    margin-bottom: 10px;
+}
+
+.staff-member p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.staff-member a {
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+}
+
+.staff-member a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 480px) {
+    .staff-section h1 {
+        font-size: 28px;
+    }
+
+    .staff-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .staff-member img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .staff-member h2 {
+        font-size: 18px;
+    }
+
+    .staff-member p {
+        font-size: 14px;
+    }
+
+    .staff-member a {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .staff-section h1 {
+        font-size: 32px;
+    }
+
+    .staff-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .staff-member img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .staff-member h2 {
+        font-size: 19px;
+    }
+
+    .staff-member p {
+        font-size: 15px;
+    }
+
+    .staff-member a {
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .staff-section h1 {
+        font-size: 36px;
+    }
+
+    .staff-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
+
+    .staff-member img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .staff-member h2 {
+        font-size: 20px;
+    }
+
+    .staff-member p {
+        font-size: 16px;
+    }
+
+    .staff-member a {
+        font-size: 14px;
+    }
+}

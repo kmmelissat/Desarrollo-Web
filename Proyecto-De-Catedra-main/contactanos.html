@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teatro Nacional</title>
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/contacto.css"
+</head>
+<body>
+    <header>
+        <div class="container">
+            <p class="logo">Teatro Nacional</p>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="cartelera.html">Cartelera</a>
+                <a href="preguntas-frecuentes.html">Preguntas Frecuentes</a>
+                <a href="galeria.html">Galería</a>
+                <a href="quienes-somos.html">Quienes Somos</a>
+                <a href="staff.html">Staff</a>
+                <a id="actual" href="contactanos.html">Contactanos</a>
+            </nav>
+        </div>
+	</header>
+
+    <section>
+		<article>
+			<div class="form-box">
+				<h2 id="form-contact">Contactanos</h2>
+				<form action="contacto.php" method="POST">
+
+					<label for="nombre">Nombre:</label>
+					<input type="text" id="nombres" name="nombre" required>
+
+					<label for="apellidos">Apellidos:</label>
+					<input type="text" id="apellidos" name="apellidos" required>
+
+					<label for="email">Correo electrónico:</label>
+					<input type="email" id="email" name="email" required>
+
+					<label for="telefono">Número de teléfono:</label>
+					<input type="tel" id="telefono" name="telefono" pattern="[0-9]{8}" required>
+
+					<label for="edad">Edad:</label>
+					<input type="number" id="edad" name="edad" min="18" max="99" required>
+
+					<label for="genero">Género:</label>
+					<div>
+						<input type="radio" id="masculino" name="genero" value="Masculino" required>
+						<label for="masculino">Masculino</label>
+						<input type="radio" id="femenino" name="genero" value="Femenino" required>
+						<label for="femenino">Femenino</label>
+                        <input type="radio" id="no-binario" name="genero" value="No  binario" required>
+						<label for="no-binario">No binario</label>
+					</div><br>
+
+					<label for="fecha_nacimiento">Fecha de nacimiento:</label>
+					<input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+
+					<label for="mensaje">Mensaje o consulta:</label>
+					<textarea id="mensaje" name="mensaje" required></textarea>
+
+					<button type="submit">Enviar</button>
+				</form>
+			</div>
+		</article>
+	</section>
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; Teatro Nacional de San Salvador</p>
+        </div>
+    </footer>
+
+</body>
+</html>

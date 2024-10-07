@@ -1,0 +1,344 @@
+:root {
+    --azul-1: #0D1B2A;
+    --azul-2: #1B263B;
+    --azul-3: #415A77;
+    --azul-4: #778DA9;
+    --azul-5: #d2d7e0;
+    --beige-1: #E0E1DD;
+    --beige-2: #c3c3c1;
+}
+
+/*Encabezado*/
+.title {
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+    background-color: var(--azul-5);
+}
+
+.title h1 {
+    font-size: 25px;
+    color: var(--azul-2);
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.title img {
+    width: 100px;
+    height: auto;
+    padding-left: 25px;
+}
+
+/*Title-2*/
+.title-2 {
+    margin: 100px 0 50px 0;
+    color: var(--azul-1);
+    font-weight: bold;
+    text-align: center;
+    border-bottom: var(--azul-1) 1px solid;
+    padding-bottom: 40px;
+}
+
+/*Cartelera*/
+.cartelera-mov .cuadro {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 80vh;
+    overflow-x: auto;
+    background-color: var(--azul-1);
+    padding: 40px;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+}
+
+.obras {
+    height: auto;
+    min-height: 300px;
+    min-width: 370px;
+    background-color: var(--azul-3);
+    text-align: center;
+    line-height: 1.5;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 30px;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.obras p {
+    text-align: center;
+    white-space: normal;
+    /*para que no se desborde*/
+    padding-top: 20px;
+    color: var(--beige-1);
+    font-size: 22px;
+    font-weight: bold;
+    border-bottom: 1px solid var(--beige-1);
+    padding-bottom: 10px;
+    padding: 10px 0;
+    flex-grow: 1;
+    /*para que el texto crezca cuando se agrande*/
+    word-wrap: break-word;
+    /*que el texto no se desborde del contenedor*/
+}
+
+.obras button {
+    background-color: var(--beige-1);
+    color: var(--azul-1);
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.2s ease;
+    border-radius: 20px;
+    height: 40px;
+    width: 200px;
+    padding: 10px;
+}
+
+.obras button:hover {
+    background-color: var(--beige-2);
+    transform: scale(1.05);
+}
+
+.obras img {
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(47, 47, 47);
+}
+
+/*Información de obras*/
+.cartelera {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--azul-1);
+    margin-bottom: 20px;
+    margin-top: 50px;
+    padding: 40px;
+    box-shadow: var(--beige-1) 0 4px 8px;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 800px;
+    align-items: center;
+}
+
+.cartelera img {
+    width: 35%;
+    height: 500px;
+    object-fit: cover;
+    margin: 20px;
+}
+
+.contenido-cartelera {
+    padding: 50px;
+    width: 65%;
+    height: 90%;
+    background-color: var(--azul-5);
+    border-radius: 8px;
+    box-shadow: #80858e 0 6px 8px;
+    margin: 10px;
+    text-align: justify;
+    overflow: hidden;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 25px;
+    color: var(--azul-1);
+    text-align: center;
+}
+
+.Detalles p {
+    padding-top: 10px;
+    font-size: 20px;
+    line-height: 1.40;
+    text-align: justify;
+    color: var(--azul-2);
+    height: auto;
+    overflow: visible;
+}
+
+strong {
+    color: var(--azul-1);
+    font-weight: bold;
+}
+
+.btn-regreso {
+    background-color: var(--azul-3);
+    color: var(--beige-1);
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.2s ease;
+    border-radius: 20px;
+    height: 40px;
+    width: 300px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.btn-regreso:hover {
+    background-color: var(--azul-4);
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 480px) {
+    .title h1 {
+        font-size: 20px;
+    }
+
+    .title img {
+        width: 120px;
+    }
+
+    .cartelera-mov .cuadro {
+        height: auto;
+    }
+
+    .obras {
+        min-width: 100%;
+        margin-bottom: 20px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 200px;
+    }
+
+    .obras p {
+        white-space: normal;
+        word-wrap: break-word;
+        padding-top: 10px;
+    }
+
+    .obras img {
+        height: 200px;
+        width: 200px;
+        overflow: hidden;
+    }
+
+    .cartelera img {
+        width: 30%;
+        height: 300px;
+    }
+
+    .contenido-cartelera {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .btn-regreso {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .Detalles{
+        width: 200px;
+    }
+
+    .Detalles p {
+        font-size: 16px;
+        height: auto;
+        overflow: visible;
+    }
+
+    .cartelera {
+        flex-direction: column;
+    }
+
+    .title,
+    .cartelera-mov,
+    .cartelera {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .title-2 {
+        margin-top: 50px;
+        font-size: 18px;
+    }
+
+    .cartelera {
+        flex-direction: column;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    .cartelera img {
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .title h1 {
+        font-size: 25px;
+    }
+
+    .title img {
+        width: 150px;
+    }
+
+    .cartelera-mov .cuadro {
+        height: auto;
+    }
+
+    .obras {
+        min-width: 320px;
+        height: 450px;
+    }
+
+    .obras img {
+        height: 250px;
+        width: 250px;
+    }
+
+    .cartelera img {
+        width: 40%;
+        height: 400px;
+        overflow: hidden;
+    }
+
+    .contenido-cartelera {
+        padding: 30px;
+        width: 60%;
+        overflow: hidden;
+    }
+
+    .btn-regreso {
+        width: 250px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .Detalles p {
+        font-size: 18px;
+        overflow: hidden;
+    }
+
+    .cartelera {
+        flex-direction: column;
+        padding: 30px;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    .cartelera img {
+        width: auto;
+    }
+}

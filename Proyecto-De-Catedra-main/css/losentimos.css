@@ -1,0 +1,21 @@
+#mensaje-losiento h3{
+    font-size: 2.5em;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.botoncito-losiento{
+    display: inline-block;
+    margin-left: 5%;
+    margin-top: 2%;
+    padding: 10px 20px; 
+    background-color: #778DA9;
+    color: white; 
+    text-decoration: none; 
+    border-radius: 30px;
+}
+
+.botoncito-losiento:hover{
+    padding: 15px 30px;
+    background-color: #0D1B2A;
+}

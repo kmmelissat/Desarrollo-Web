@@ -1,0 +1,145 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+:root{
+    --primary: #0b1320;
+    --secondary: #1e2c46;
+    --third: #3d5d76;
+    --fourth: #758cac;
+    --background: #f0ebd8;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html{
+    background-color: #dddddd5a;
+}
+
+.container{
+    max-width: 1450px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/*Header*/
+header {
+    background-color: #0D1B2A;
+    height: 95px;
+    border-bottom: #758cac 3px solid;
+}
+
+header .logo {
+    padding: 35px 30px;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #E0E1DD;
+    padding-left: 50px;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+}
+
+#actual{
+    color: var(--fourth);
+    font-weight: bold;
+}
+header a {
+    padding: 0px 15px;
+    text-decoration: none;
+    color: #E0E1DD;
+}
+
+header a:hover {
+    color: #4f7ea3d3;
+    padding-bottom: 4px;
+    border-bottom: #4f7ea3d3 1px solid;
+}
+
+/*Footer*/
+footer {
+    background-color: #0D1B2A;
+}
+
+footer p {
+    padding: 12px;
+    color: #E0E1DD;
+}
+
+footer .container {
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 480px) {
+    header .logo {
+        font-size: 1rem;
+        padding-left: 20px;
+    }
+
+    header nav a {
+        padding: 0 10px;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    footer .container {
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    header .logo {
+        font-size: 1.1rem;
+        padding-left: 30px;
+    }
+
+    header nav {
+        justify-content: center;
+    }
+
+    header nav a {
+        padding: 0 12px;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    footer .container {
+        height: 80px;
+    }
+    
+}@media (min-width: 769px){
+    header .logo {
+        font-size: 1.2rem;
+    }
+
+    header nav {
+        justify-content: space-between;
+    }
+
+    .container {
+        max-width: 90%;
+        padding: 0 20px;
+    }
+}
