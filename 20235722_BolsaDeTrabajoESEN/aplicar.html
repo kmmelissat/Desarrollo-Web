@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Bolsa de trabajo ESEN</title>
+	<link href="css/estilo.css" rel="stylesheet"/>
+</head>
+<body>
+	<header>
+		<div class="envoltorio">
+			<div class="logo">
+				<a href="index.html"><img src="images/logo2.png" title="logo" height="42px" /></a>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="ofertas.html">Ofertas</a></li>
+					<li><a href="consejos.html">Consejos</a></li>
+					<li class="activo"><a href="aplicar.html">Aplicar</a></li>
+					<li><a href="#">Contacto</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<section>
+		<article class="ofertas">
+			<div class="envoltorio">
+				<h2 id="formula1">Formulario de Aplicación</h2>
+				<form action="aplicar.php" method="POST">
+					<label for="nombre">Nombre:</label>
+					<input type="text" id="nombre" name="nombre" required>
+
+					<label for="apellidos">Apellidos:</label>
+					<input type="text" id="apellidos" name="apellidos" required>
+
+					<label for="carnet">Carnet:</label>
+					<input type="text" id="carnet" name="carnet" required>
+
+					<label for="departamento">Departamento de residencia:</label>
+					<select id="departamento" name="departamento" required>
+						<option value="">Seleccione un departamento</option>
+						<option value="Ahuachapán">Ahuachapán</option>
+						<option value="Santa Ana">Santa Ana</option>
+						<option value="Sonsonate">Sonsonate</option>
+						<option value="Chalatenango">Chalatenango</option>
+						<option value="Cuscatlán">Cuscatlán</option>
+						<option value="La Libertad">La Libertad</option>
+						<option value="La Paz">La Paz</option>
+						<option value="San Salvador">San Salvador</option>
+						<option value="San Vicente">San Vicente</option>
+						<option value="Cabañas">Cabañas</option>
+						<option value="Usulután">Usulután</option>
+						<option value="Morazán">Morazán</option>
+						<option value="San Miguel">San Miguel</option>
+						<option value="La Unión">La Unión</option>
+					</select>
+
+					<label for="edad">Edad:</label>
+					<input type="number" id="edad" name="edad" min="18" max="99" required>
+
+					<label for="genero">Género:</label>
+					<div>
+						<input type="radio" id="masculino" name="genero" value="Masculino" required>
+						<label for="masculino">Masculino</label>
+						<input type="radio" id="femenino" name="genero" value="Femenino" required>
+						<label for="femenino">Femenino</label>
+					</div>
+
+					<label for="fecha_nacimiento">Fecha de nacimiento:</label>
+					<input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+
+					<label for="telefono">Número de teléfono:</label>
+					<input type="tel" id="telefono" name="telefono" pattern="[0-9]{8}" required>
+
+					<label for="carrera">Carrera:</label>
+					<select id="carrera" name="carrera" required>
+						<option value="">Seleccione una carrera</option>
+						<option value="Ingeniería de Software y Negocios Digitales">Ingeniería de Software y Negocios Digitales</option>
+						<option value="Ingeniería de Negocios">Ingeniería de Negocios</option>
+						<option value="Licenciatura en Economía y Negocios">Licenciatura en Economía y Negocios</option>
+						<option value="Licenciatura en Ciencias Jurídicas">Licenciatura en Ciencias Jurídicas</option>
+					</select>
+
+					<label for="salario">Pretensión salarial ($):</label>
+					<input type="number" id="salario" name="salario" min="0" required>
+
+					<button type="submit">Enviar Aplicación</button>
+				</form>
+			</div>
+		</article>
+		
+	</section>
+	<footer>
+		<p>Creado por: Karla Melissa Torres Solorzano 20235722</p>
+	</footer>
+</body>
+</html>
+
+

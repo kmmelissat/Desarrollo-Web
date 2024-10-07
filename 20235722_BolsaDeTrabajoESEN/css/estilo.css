@@ -1,0 +1,328 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background-color: #30404e;
+    padding: 20px 0;
+    
+}
+
+.envoltorio {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 42px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 18px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #004080;
+    padding: 10px 15px;
+}
+
+nav ul li ul.submenu {
+    display: none;
+    position: absolute;
+    background-color: #0056b3;
+    top: 40px;
+    left: 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav ul li:hover ul.submenu {
+    display: block;
+}
+
+nav ul li ul.submenu li a {
+    white-space: nowrap;
+    display: block;
+    padding: 10px;
+}
+
+.contenedor-slider img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.intro {
+    text-align: justify;
+    background-color: #12488c;
+    padding: 20px 20px;
+}
+
+.intro .envoltorio {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: justify;
+}
+
+.intro h1 {
+    text-align: center;
+}
+
+.intro h1 a {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.intro p {
+    margin: 10px 10px;
+    line-height: 1.5;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+.intro .boton {
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #004080;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+
+.intro span {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.servicios {
+    background-color: white;
+    padding: 50px 0;
+}
+
+.grid {
+    width: 30%;
+    text-align: center;
+    display: inline-block;
+    margin: 0 1%;
+    vertical-align:top;
+    border: 1px solid rgb(200, 200, 200);
+    padding: 5px 5px;
+}
+
+.grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.grid h3 {
+    margin: 15px 0;
+    font-size: 1.5rem;
+    color: #002F56;
+}
+
+.grid p {
+    line-height: 1.5;
+    font-size: 1rem;
+    color: #666;
+    text-align: justify;
+    padding: 10px 15px;
+}
+
+.botoncito {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #004080;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+
+.testimonios {
+	height: 275px;
+
+	background-color: rgb(237, 234, 229);
+	line-height: 2;
+	color: black;
+	align-content: center;
+}
+
+.testimonios h3 {
+	text-align: center;
+	font-size: 30px;
+	font-weight: lighter;
+	padding: 10px;
+}
+
+.testimonios p {
+	color: rgb(147, 150, 150);
+    padding: 0 40px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #30404e;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.ofertas .envoltorio{
+    display: flex;
+    flex-direction: column;
+}
+
+.ofertas .envoltorio h2{
+text-align: center;
+color: #004080;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+table th,
+table td {
+    padding: 12px;
+    border: 1px solid #dddddd;
+}
+
+table th {
+    background-color: #002F56;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.btn-aplicar {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #004080;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-aplicar:hover {
+    background-color: #003366;
+}
+
+video {
+    display: block;
+    margin: 20px auto;
+    border: 5px solid #ddd;
+    border-radius: 10px;
+}
+
+.ofertas {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#formula1 {
+    text-align: center;
+    color: #0f224a;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="tel"],
+select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+
+
+div label {
+    margin-right: 15px;
+    color: #333;
+}
+
+button[type="submit"] {
+    background-color: #240f8d;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #2e91e1;
+}
