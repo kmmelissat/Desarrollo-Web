@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&family=Noto+Color+Emoji&display=swap');
+
+:root{
+    --primary-color: #ff7bbd;
+    --secondary-color: #ed1b76;
+    --third: #b40c47;
+    --fourth: #ffcde4;
+}
+
+.noto-color-emoji-regular {
+    font-family: "Noto Color Emoji", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Afacad Flux", sans-serif;
+}
+
+body {
+    background-image: url(../img/165398d04d97b31bb666c7415f44e36a.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+}
+
+.envoltorio {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    background-color: var(--primary-color);
+    border-bottom: var(--secondary-color) 2px dotted;
+}
+
+header .envoltorio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .bloq1 {
+    color: white;
+    width: 40%;
+    font-size: 1.2rem;
+}
+
+header .bloq2{
+    width: 40%;
+}
+
+nav ul {
+    list-style-type: none;    
+    line-height: 80px;
+}
+
+nav a {
+    color: var(--third);
+    display: inline-block;
+    padding: 0 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+nav a:hover {
+    background: var(--fourth);
+    text-decoration: underline 2px dotted ;
+    color: var(--third);
+}
+
+nav>ul>li {
+    float: inline-end;
+}
+
+
+
+.intro{
+    line-height: 2;
+    padding: 10vh;
+}
+
+#tulip{
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    border-bottom: 2px dotted #ff91c5;
+    border-top: 2px dotted #ff91c5;
+    padding: 2vh 0 2vh 0;
+}
+
+.intro h1{
+    text-align: center;
+    font-size: 42px;
+    font-family: "Grandstander", cursive;
+    color: var(--secondary-color);
+}
+
+.intro p{
+    text-align: center;
+    font-size: 18px;
+}
+
+.guias{
+    margin-bottom: 7vh;
+}
+.guias .envoltorio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-evenly;
+
+}
+
+.cuadrito {
+    background-image: url(../img/jart.png);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: 110%;
+    width: 50vh;
+    margin: 6vh 0;
+    line-height: 2;
+    font-size: 20px;
+    box-shadow: 5px 5px 10px #ff0f7b78;
+    padding: 20px;
+    border-radius: 2%;
+}
+
+.cuadrito h3 {
+    font-size: 24px;
+    color: #ff1e87;
+    font-family: "Grandstander", cursive;
+    border-bottom: #f42969 2px dotted;
+}
+
+.cuadrito a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.cuadrito a:hover {
+    color: #ffffff;
+    background-color: #ff96d55f;
+    padding: 0 3vh;
+}
+
+.descripcion-guias{
+    margin-bottom: 10vh;
+}
+.descripcion-guias .envoltorio {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.tit {
+    margin: 30px auto;
+    font-size: 30px;
+    color: #ffffff;
+
+}
+
+.tit h1{
+    font-family: "Grandstander", cursive;    
+}
+
+.descripciones {
+    width:87.5%;
+    background-color: #fff7ed;
+    padding: 4vh;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #ff0f7b78;
+}
+
+.descripcion {
+    width: 90%;
+    margin: 20px auto;
+    border: #f42969 2px dotted;
+    padding: 2vh 5vh 5vh 5vh;
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.descripcion h2 {
+    text-align: center;
+    font-weight: bold;
+    color: #ff157e;
+    font-family: "Grandstander", cursive;
+}
+
+footer {
+    background-color: #ffbfe5;
+    color: #ff2e89;
+    text-align: center;
+    width: 100%;
+    margin-top: auto;
+    font-size: 20px;
+    font-weight: bold;
+}
