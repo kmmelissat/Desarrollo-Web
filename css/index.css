@@ -304,3 +304,67 @@ footer {
     color: #ffa9cb;
     font-family: "Grandstander", cursive;
 }
+
+.retro{
+    margin-bottom: 7vh;
+}
+.retro .envoltorio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-evenly;
+
+}
+
+.cuadrito1 {
+    background-image: url(../img/snupi.jpg);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: 100%;
+    width: 40%;
+    margin: 6vh 0;
+    line-height: 1.8;
+    font-size: 20px;
+    box-shadow: 5px 5px 10px #e6308578;
+    padding: 20px;
+    border-radius: 2%;
+    text-align: justify;
+}
+
+.cuadrito1:hover {
+    background-image: url(../img/star.jpg);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: 100%;
+    width: 40%;
+    margin: 6vh 0;
+    line-height: 1.8;
+    font-size: 20px;
+    box-shadow: 5px 5px 10px #e6308578;
+    padding: 20px;
+    border-radius: 2%;
+    text-align: justify;
+    color: #fef5f9;
+}
+
+.cuadrito1 h3 {
+    font-size: 24px;
+    color: #ff1e87;
+    font-family: "Grandstander", cursive;
+    border-bottom: #f42969 2px dotted;
+}
+
+
+
+.teto{
+    line-height: 2;
+    padding-top: 6vh;
+}
+
+.teto h1{
+    text-align: center;
+    font-size: 42px;
+    font-family: "Grandstander", cursive;
+    color: white;
+}
