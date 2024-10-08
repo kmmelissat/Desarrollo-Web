@@ -171,33 +171,6 @@ nav>ul>li {
     font-family: "Grandstander", cursive;    
 }
 
-.descripciones {
-    width:87.5%;
-    background-color: #fff7ed;
-    padding: 4vh;
-    margin: 0 auto;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px #ff0f7b78;
-}
-
-.descripcion {
-    width: 90%;
-    margin: 20px auto;
-    border: #f42969 2px dotted;
-    padding: 2vh 5vh 5vh 5vh;
-    text-align: justify;
-    line-height: 1.5;
-    font-size: 18px;
-    border-radius: 10px;
-}
-
-.descripcion h2 {
-    text-align: center;
-    font-weight: bold;
-    color: #ff157e;
-    font-family: "Grandstander", cursive;
-}
-
 footer {
     background-color: #ffbfe5;
     color: #ff2e89;
@@ -260,4 +233,74 @@ footer {
 
 #personal-info tr:nth-child(even) td {
     background-color: #fff0f6;
+}
+
+
+/**CURSOOOO**/
+.FODA{
+    margin-bottom: 10vh;
+}
+.FODA .envoltorio {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.tit-foda{
+    margin: 10px auto;
+    font-size: 30px;
+    color: #ffffff;
+
+}
+
+.tit-foda h1{
+    font-family: "Grandstander", cursive;  
+    text-align: center;  
+}
+
+.descripciones {
+    width:87.5%;
+    background-color: #fff7ed;
+    padding: 4vh;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #ff0f7b78;
+}
+
+.descripcion {
+    width: 90%;
+    margin: 20px auto;
+    border: #f42969 2px dotted;
+    padding: 2vh 5vh 5vh 5vh;
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.descripcion:hover {
+    width: 90%;
+    margin: 20px auto;
+    border: #fc2288 2px dotted;
+    background-color: #ff7bbd3c;
+    background-image: url(../img/165398d04d97b31bb666c7415f44e36a.jpg);
+    padding: 2vh 5vh 5vh 5vh;
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.descripcion h2 {
+    text-align: center;
+    font-weight: bold;
+    color: #ff157e;
+    font-family: "Grandstander", cursive;
+}
+
+.descripcion:hover h2 {
+    text-align: center;
+    font-weight: bold;
+    color: #ffa9cb;
+    font-family: "Grandstander", cursive;
 }
