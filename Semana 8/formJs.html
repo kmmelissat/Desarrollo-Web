@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperando datos con JavaScript</title>
+    <script defer src="formJs.js"></script>
+</head>
+<body> 
+    <h1>Formulario</h1>
+    <table>
+        <tr>
+            <td><label for="nombre">Nombre:</label></td>
+            <td><input type="text" id="nombre"></td>
+        </tr>
+        <tr>
+            <td><label for="apellido">Apellido:</label></td>
+            <td><input type="text" id="apellido"></td>
+        </tr>
+        <tr>
+            <td><label for="fechaNacimiento">Fecha de nacimiento</label></td>
+            <td><input type="date" id="fechaNacimiento"></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Enviar" id="boton" onclick="ingresarDatos()"></td>
+        </tr>
+
+    </table>
+
+        resultado: <span id="resultado"></span>
+</body>
+</html>
