@@ -183,3 +183,82 @@ document.getElementById("idModal").addEventListener("shown.bs.modal", () => {
     //inicializando puntero en el campo del titulo para el control
     tituloElemento.focus();
 });
+
+const idExists = (id) => !!document.getElementById(id);
+
+//FUNCIÓN PARA CREAR UN NUEVO ELEMENTO
+const createNewElement = function(type) {
+    const newElement = type === "textarea" ? document.createElement("textarea") : document.createElement("input");
+    newElement.type = type;
+    newElement.id = `id${nombreElemento.value}`;
+    newElement.className = "form-control";
+    newElement.placeholder = tituloElemento.value;
+
+    // Validación para que el ID no se repita
+    if (idExists(newElement.id)) {
+        alert("Este ID ya existe. Por favor, elige un nombre de ID diferente.");
+        return;
+    }
+
+    // Agregar al formulario
+    const label = document.createElement("label");
+    label.textContent = tituloElemento.value;
+    label.setAttribute("for", newElement.id);
+    
+    const div = document.createElement("div");
+    div.classList.add("form-floating", "mb-3");
+    div.appendChild(newElement);
+    div.appendChild(label);
+
+    newForm.appendChild(div);
+};
+
+// Agregar evento para el botón de crear
+buttonCrear.onclick = () => verificarTipoElemento();
+
+buttonAddElemento.onclick = () => {
+    if (nombreElemento.value && tituloElemento.value) {
+        switch (cmbElemento.value) {
+            case "text":
+            case "number":
+            case "date":
+            case "password":
+            case "color":
+            case "email":
+                createNewElement(cmbElemento.value);
+                break;
+            case "radio":
+            case "checkbox":
+                // Implementar función similar para radio y checkbox
+                break;
+            case "select":
+                // Implementar función para select
+                break;
+        }
+    } else {
+        alert("Faltan campos por completar");
+    }
+};
+
+// Validación del formulario para campos llenos y seleccionados
+document.getElementById("idBtnValidar").onclick = () => {
+    const elements = document.querySelectorAll("input, select, textarea");
+    let allValid = true;
+
+    elements.forEach(element => {
+        if ((element.type === "text" || element.type === "email" || element.type === "color" || element.type === "number" || element.type === "date" || element.type === "password") && !element.value) {
+            alert(`El campo ${element.id} está vacío.`);
+            allValid = false;
+        } else if ((element.type === "radio" || element.type === "checkbox") && !element.checked) {
+            alert(`Por favor selecciona una opción en ${element.id}.`);
+            allValid = false;
+        } else if (element.tagName === "SELECT" && element.selectedIndex === 0) {
+            alert(`Por favor selecciona una opción en ${element.id}.`);
+            allValid = false;
+        }
+    });
+
+    if (allValid) {
+        alert("Todos los campos están correctamente llenos o seleccionados.");
+    }
+};
